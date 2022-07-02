@@ -43,7 +43,7 @@ public class JwtAuthticationController {
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
         } catch (DisabledException e) {
-            throw new Exception("USER_DISABLED OKE 002 cv", e);
+            throw new Exception("USER_DISABLED OKE 002 cv,tuvolep ", e);
         } catch (BadCredentialsException e) {
             throw new Exception("INVALID_CREDENTIALS", e);
         }
